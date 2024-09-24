@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="includeHTML" ></div>
+
+    <div id="contact-name">GET IN CONTACT:</div>
+
+
+    
+ 
+    <form name="RegForm" onsubmit="return validateForm()">
+        <h1>CONTACT FORM : </h1>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Enter your full name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="Username" placeholder="Enter your username" />
+            <span id="username-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="text" id="email" name="EMail" placeholder="Enter your email" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" />
+            <span id="password-error" class="error-message"></span>
+        </p>
+        <p>
+            <input type="checkbox" id="agree" name="Agree" />
+            <label for="agree">I agree to the above information</label>
+            <span id="agree-error" class="error-message"></span>
+        </p>
+        <p>
+            <input type="submit" value="Send" name="Submit" />
+        </p>
+    </form>
+    
+      <script src="js/script.js"></script>
+    <div id="contact-design">
+      <div class="contact-icon1">
+      <img src="img/background-with-flat-contact-elements_23-2147610940.avif" alt="">
+      </div>
+      <div class="contact-icon2">
+      <img src="img/business-graph-background-vector-flat-graphic_53876-111640.avif" alt="">
+      </div>
+      <div class="contact-icon3">
+      <img src="img/map-infographic-background-with-icons_23-2147604180.avif" alt="">
+      </div>
+      
+       
+               
+        
+      </div>
+
+    
+        
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   
+      <script>
+        $(function() {
+           $("#includeHTML").load("nav/nav.html");
+        });
+     </script>
+     <script src="js/script.js"></script>
+</body>
+</html>
